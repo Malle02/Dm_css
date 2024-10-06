@@ -1,0 +1,407 @@
+/* Styles pour le header */
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 50px; 
+}
+
+
+#recherche_conteneur {
+    display: flex; 
+    align-items: center; 
+}
+
+/* Styles pour le menue  */
+nav {
+    width: calc(100% - 100px); 
+    margin: 0 auto; 
+    padding: 0 50px; 
+    margin-top: 1%;
+}
+
+.nav-pills {
+    display: flex; 
+    justify-content: space-between; 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-item {
+    position: relative; 
+    flex-grow: 1; 
+}
+
+.nav-item:nth-child(3) {
+    flex-grow: 3; 
+}
+
+.nav-item:last-child {
+    flex-grow: 0.8; 
+}
+
+.nav-item:first-child > a {
+    align-items: center; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.nav-item > a {
+    text-decoration: none; 
+    font-weight: bold; 
+    color: #005b99; 
+    background-color: #F1F6F8; 
+    border: 1px solid #dcdcdc; 
+    border-bottom: 1px solid #F0F5F8; 
+    padding: 10px; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    box-shadow: 
+        0px -15px 20px rgba(153, 142, 142, 0.3), 
+        0px 1px 0px rgb(47, 47, 167);
+}
+
+
+.nav-item:hover > ul {
+    display: block; 
+}
+
+.nav-item ul {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background-color: #ffffff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    list-style-type: none; 
+    padding: 10px 0; 
+    z-index: 10; 
+}
+
+.nav-item ul li {
+    margin: 0; 
+}
+
+.nav-item ul li a {
+    text-decoration: none; 
+    padding: 10px 20px; 
+    color: #005b99; 
+    display: block; 
+}
+
+.nav-item ul li a:hover {
+    background-color: #e1e5eb; 
+}
+
+/* le breadcrumb  */
+
+.breadcrumb {
+    display: flex;
+    align-items: center; 
+    margin: 30px 10px; 
+}
+
+.breadcrumb > li {
+    margin: 0; 
+    list-style-type: none;
+    color: #005b99;
+}
+
+.breadcrumb > li > a {
+    font-weight: bold;
+    color: #005b99;
+    text-decoration: none;
+}
+
+
+
+/* la section du millieux  */
+h1 {
+    background-color: #0e5f96;
+    font-weight: bold;
+    color: white;
+    text-align: initial;
+    margin-top: 0;
+    border-radius: 15px 15px 0 0;
+    padding-left: 10%;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.midle {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin: 0; 
+    padding: 0 50px; 
+}
+
+main {
+    width: calc(100% - 24%); 
+    padding: 0; 
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.the_articles {
+    display: flex; 
+    background-color: #e1e5eb;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; 
+}
+
+.the_articles > div {
+    display: flex; 
+    flex-direction: column; 
+    margin: 10px; 
+    border-radius: 10px; 
+    flex: 1; 
+    max-width: calc(33% - 20px); 
+    padding: 10px; 
+}
+
+.the_articles img {
+    margin-right: 10px; 
+}
+
+.the_articles > div > a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: #005b99; 
+    margin-bottom: 10px; 
+}
+
+.the_articles ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.the_articles ul li {
+    margin: 5px 0; 
+    font-size: 14px; 
+    color: #666; 
+}
+
+
+
+
+/* laterale  */
+aside {
+    width: 24%; 
+    margin-top: -27px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.astuce {
+    margin-bottom: 10px;
+    background-color: #e1e5eb;
+    border-radius: 15px;
+}
+
+.astuce > h3 {
+    background-color: #0e5f96;
+    color: white;
+    border-radius: 15px 15px 0 0; 
+    padding-left: 10%;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 17px;
+}
+
+.actualite {
+    border-radius: 15px;
+    background-color: #e1e5eb;
+    color: white;
+}
+
+.actualite > h3 {
+    background-color: #ae1c1c;
+    color: white;
+    padding: 10px;
+    border-radius: 15px 15px 0 0; 
+    padding-left: 10%;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 17px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #0056b3;
+    display: block;
+    border-radius: 3px;
+    padding: 10px; 
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    color: #555;
+}
+
+aside ul li a {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+aside .date {
+    font-weight: bold;
+    color: #b52b1e;
+}
+
+.detail-links {
+    margin-left: 35%;
+}
+
+.detail-link {
+    margin-left: 29%;
+}
+
+
+
+/*le  footer */
+footer {
+    border-radius: 10px;
+    background-color: #008bd3;
+    color: white;
+    padding: 0; 
+    margin: 0 50px; 
+    box-sizing: border-box; 
+}
+
+.bottom-footer {
+    background-color: #00327b;
+    text-align: center;
+    margin-bottom: 0; 
+    border-radius: 0 0 10px 10px;
+}
+
+.top-footer {
+    margin-right: 20%; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.top-footer li {
+    flex: 1; 
+    padding: 0 10px ; 
+}
+
+.top-footer li ul {
+    list-style: disc; 
+    padding-left: 0px; 
+    margin: 0; 
+}
+
+.top-footer p {
+    margin: 0 0 5px; 
+}
+
+.top-footer ul li {
+    margin: 2px 0; 
+}
+
+/* Réduit l'espace entre l'image et le premier élément de la liste */
+.top-footer li span {
+    margin-bottom: 2px; 
+}
+
+.footer_link {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* le  responsive  */
+
+@media screen and (max-width: 784px) {
+    header {
+        display: inline-block;
+    }
+
+    .nav-pills {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .nav-item {
+        position: relative; 
+    }
+
+    .nav-item:hover > ul {
+        display: block; 
+    }
+
+    .nav-item ul {
+        position: static; 
+        display: none; 
+    }
+
+    .nav-item.active > ul {
+        display: block; 
+    }
+
+    .nav-item ul li a {
+        color: dodgerblue; 
+    }
+
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .midle {
+        display: inline-block;
+    }
+
+    .the_articles {
+        display: inline-block;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside{
+        margin-top: 1%;
+        width: 100%;
+        margin: 0; 
+    }
+    
+
+
+  
+    header img {
+        margin: 0; 
+        width: 100%; 
+        height: auto; 
+    }
+   
+    .top-footer {
+        display: inline-block; 
+        margin-left: 10%;
+        text-align: center;
+    }
+
+   
+  }
